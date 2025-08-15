@@ -1,126 +1,74 @@
-/* Fonts and colors */
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #f8f9fb, #eef1f6);
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Dr. Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html"><span class="brand-name">Dr. Your Name</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+      <a class="cta" href="index.html">Home</a>
+    </nav>
+  </header>
 
-/* Navigation */
-.site-header {
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
+  <main class="container">
+    <section class="section" data-aos="fade-up">
+      <h2 class="section-title">Get in touch</h2>
+      <p>Interested in collaboration, invited talks, or questions about my work? Send a note below.</p>
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-}
+      <form id="contact-form" class="contact-form" data-aos="fade-up" data-aos-delay="80">
+        <label>
+          <span>Your name</span>
+          <input required type="text" name="name" placeholder="Your name">
+        </label>
 
-.brand-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #111;
-}
+        <label>
+          <span>Email</span>
+          <input required type="email" name="email" placeholder="you@institution.edu">
+        </label>
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-}
+        <label>
+          <span>Message</span>
+          <textarea required name="message" rows="6" placeholder="Short message..."></textarea>
+        </label>
 
-.nav-links a {
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p id="form-response" class="form-response" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: #0077ff;
-}
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Dr. Your Name</strong></div>
+      <div class="socials"><a href="#">ORCID</a> <a href="#">Scholar</a></div>
+    </div>
+  </footer>
 
-/* Contact Form */
-.section {
-  padding: 3rem 1rem;
-  max-width: 700px;
-  margin: auto;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 1.5rem;
-}
-
-.contact-form span {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-weight: 500;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.9rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #0077ff;
-  box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.2);
-  outline: none;
-}
-
-/* Button */
-.btn-primary {
-  background: #0077ff;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btn-primary:hover {
-  background: #005bcc;
-  transform: translateY(-2px);
-}
-
-/* Footer */
-.site-footer {
-  background: #f1f3f6;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.socials a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  color: #0077ff;
-  transition: color 0.3s ease;
-}
-
-.socials a:hover {
-  color: #005bcc;
-}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="main.js"></script>
+  <script>
+    AOS.init({ once: true });
+    // simple client-only form demo
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('form-response').textContent = 'Thanks! Your message was recorded locally in the demo. Replace this with your email backend or form service.';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
