@@ -1,163 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kazi Md Zubaer — Organic Chemist</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kazi Md Zubaer — Organic Chemist</title>
 
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- AOS for scroll animations -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- AOS for scroll animations -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
 
-  <meta name="color-scheme" content="light">
-</head>
-<body>
-  <!-- full-screen particle canvas -->
-  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <meta name="color-scheme" content="light" />
+  </head>
+  <body>
+    <!-- full-screen particle canvas -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
     <div id="particles-js"></div>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="index.html"><span class="brand-name">Kazi Md Zubaer</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="publications.html">Publications</a></li>
-      </ul>
-      <a class="cta" href="research.html">View Research</a>
-    </nav>
-  </header>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="index.html"
+          ><span class="brand-name">Kazi Md Zubaer</span></a
+        >
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="publications.html">Publications</a></li>
+        </ul>
+        <a class="cta" href="research.html">View Research</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero container" id="home">
-      <div class="hero-inner" data-aos="fade-up" data-aos-duration="1500">
-        <h1 class="hero-title">Designing molecules that assemble with purpose</h1>
-        <p class="hero-sub">Organic chemist — supramolecular polymers, molecular design, spectroscopy. I blend precision synthesis with elegant characterization to tune structure and function.</p>
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-inner" data-aos="fade-up" data-aos-duration="900">
+          <h1 class="hero-title">
+            Designing molecules that assemble with purpose
+          </h1>
+          <p class="hero-sub">
+            Organic chemist — supramolecular polymers, molecular design,
+            spectroscopy. I blend precision synthesis with elegant
+            characterization to tune structure and function.
+          </p>
 
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="research.html">Selected Projects</a>
-          <a class="btn btn-ghost" id="btn-aboutme" href="about.html">About Me</a>
-          <a class="btn btn-primary btn-cv" id="CV" onclick="openCV()" href="#">Download CV</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="research.html"
+              >Selected Projects</a
+            >
+            <a class="btn btn-ghost" href="about.html">About Me</a>
+            <a class="btn btn-primary" href="">Download CV</a>
+          </div>
+
+          <div class="hero-meta" aria-hidden="true">
+            <div class="meta-card" data-aos="fade-right" data-aos-delay="200">
+              <strong>30+</strong>
+              <span>Publications & Posters</span>
+            </div>
+            <div class="meta-card" data-aos="fade-left" data-aos-delay="300">
+              <strong>10+</strong>
+              <span>Years Research Experience</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="hero-meta" aria-hidden="true">
-          <div class="meta-card" data-aos="fade-right" data-aos-delay="200">
-            <strong>2+</strong>
-            <span>Publications & Posters</span>
+      <!-- Research preview -->
+      <section class="section container" id="work" data-aos="fade-up">
+        <h2 class="section-title">Selected Research</h2>
+        <div class="cards-grid">
+          <!-- EDIT: Replace with your project details -->
+          <article class="card" data-aos="zoom-in" data-aos-delay="50">
+            <div class="card-inner">
+              <h3>Tuning supramolecular polymer length</h3>
+              <p>
+                Use of monofunctional chain stoppers to control self-assembly
+                and morphology. (Journal, Year)
+              </p>
+              <a class="card-link" href="research.html">Read more →</a>
+            </div>
+          </article>
+
+          <article class="card" data-aos="zoom-in" data-aos-delay="120">
+            <div class="card-inner">
+              <h3>VT-UV–Vis spectroscopy for assembly studies</h3>
+              <p>
+                Temperature dependent UV–Vis reveals critical transitions and
+                cooperative assembly behaviour.
+              </p>
+              <a class="card-link" href="research.html">Read more →</a>
+            </div>
+          </article>
+
+          <article class="card" data-aos="zoom-in" data-aos-delay="190">
+            <div class="card-inner">
+              <h3>Responsive polymeric nanostructures</h3>
+              <p>
+                Design of stimuli-responsive systems with controlled
+                disassembly.
+              </p>
+              <a class="card-link" href="research.html">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA strip -->
+      <section class="cta-strip" data-aos="fade">
+        <div class="container">
+          <h3>Interested in collaboration or a talk?</h3>
+          <a class="btn btn-outline" href="contact.html">Get in touch</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <strong>Kazi Md Zubaer</strong>
+            <p>Organic Chemist • Supramolecular Polymers • Spectroscopy</p>
           </div>
-          <div class="meta-card" data-aos="fade-left" data-aos-delay="300">
-            <strong>3+</strong>
-            <span>Years Research Experience</span>
+          <div class="socials">
+            <!-- EDIT: replace with your links -->
+            <a href="https://orcid.org/0000-0000-0000-0000" aria-label="ORCID"
+              ><i class="fab fa-orcid"></i
+            ></a>
+            <a href="https://scholar.google.com" aria-label="Google Scholar"
+              ><i class="fas fa-graduation-cap"></i
+            ></a>
+            <a href="mailto:you@example.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/yourprofile" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    </main>
 
-    <!-- Research preview -->
-    <section class="section container" id="work" data-aos="fade-up">
-      <h2 class="section-title">Selected Research</h2>
-      <div class="cards-grid">
-        <!-- EDIT: Replace with your project details -->
-        <article class="card" data-aos="zoom-in" data-aos-delay="50">
-          <div class="card-inner">
-            <h3>Tuning supramolecular polymer length</h3>
-            <p>Use of monofunctional chain stoppers to control self-assembly and morphology. (Journal, Year)</p>
-            <a class="card-link" href="research.html">Read more →</a>
-          </div>
-        </article>
-
-        <article class="card" data-aos="zoom-in" data-aos-delay="120">
-          <div class="card-inner">
-            <h3>VT-UV–Vis spectroscopy for assembly studies</h3>
-            <p>Temperature dependent UV–Vis reveals critical transitions and cooperative assembly behaviour.</p>
-            <a class="card-link" href="research.html">Read more →</a>
-          </div>
-        </article>
-
-        <article class="card" data-aos="zoom-in" data-aos-delay="190">
-          <div class="card-inner">
-            <h3>Responsive polymeric nanostructures</h3>
-            <p>Design of stimuli-responsive systems with controlled disassembly.</p>
-            <a class="card-link" href="research.html">Read more →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CTA strip -->
-    <section class="cta-strip" data-aos="fade">
-      <div class="container">
-        <h3>Interested in collaboration or a talk?</h3>
-        <a class="btn btn-outline" href="contact.html">Get in touch</a>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <strong>Kazi Md Zubaer</strong>
-          <p>Organic Chemist • Supramolecular Polymers • Spectroscopy</p>
-        </div>
-        <div class="socials">
-          <!-- EDIT: replace with your links -->
-          <a href="#" aria-label="ORCID">ORCID</a>
-          <a href="#" aria-label="Google Scholar">Scholar</a>
-          <a href="#" aria-label="Email">Email</a>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  
-  <script>
-    AOS.init({
-      once: true,
-      easing: 'ease-out-cubic',
-      offset: 120
-    });
-    particlesJS("particles-js", {
-  particles: {
-    number: { value: 80 },
-    color: { value: ["#a0c4ff", "#bdb2ff", "#caffbf"] },
-    shape: { type: "circle" },
-    opacity: { value: 0.5 },
-    size: { value: 3 },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#a0c4ff",
-      opacity: 0.4,
-      width: 1
-    },
-    move: { enable: true, speed: 1.3 }
-  }
-}); 
-
-function openCV() {
-    // Replace with the actual file path or URL to your CV
-    window.open('cv.pdf', '_blank');
-}
-  </script>
-  <style>
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #f9f9fb; /* match your site color */
-  z-index: -1;
-}
-
-</style>
-</body>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        easing: "ease-out-cubic",
+        offset: 120,
+      });
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80 },
+          color: { value: ["#a0c4ff", "#bdb2ff", "#caffbf"] },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3 },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#a0c4ff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: { enable: true, speed: 1 },
+        },
+      });
+    </script>
+    <style>
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9fb; /* match your site color */
+        z-index: -1;
+      }
+    </style>
+  </body>
 </html>
-

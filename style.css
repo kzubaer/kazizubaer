@@ -294,7 +294,6 @@ body{
   justify-content:space-between;
   align-items:center;
 }
-.socials a{ margin-left: .75rem; text-decoration:none; color:var(--muted) }
 
 /* about */
 .about-grid{
@@ -400,4 +399,16 @@ body.contact-page .socials a {
 
 body.contact-page .socials a:hover {
   color: #005bcc;
+}
+
+.socials a {
+  font-size: 1.4rem;
+  color: #555;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+  color: #0077ff;
+  transform: translateY(-3px);
 }
