@@ -63,7 +63,7 @@
               >Selected Projects</a
             >
             <a class="btn btn-ghost" href="about.html">About Me</a>
-            <a class="btn btn-primary" href="">Download CV</a>
+            <a class="btn btn-primary btn-cv" onclick="openCV()" id="CV" href="">Download CV</a>
           </div>
 
           <div class="hero-meta" aria-hidden="true">
@@ -135,20 +135,17 @@
           </div>
           <div class="socials">
             <!-- EDIT: replace with your links -->
-            <a href="https://orcid.org/0000-0000-0000-0000" aria-label="ORCID"
+            <a href="https://orcid.org/0009-0007-3839-0576" aria-label="ORCID"
               ><i class="fab fa-orcid"></i
             ></a>
-            <a href="https://scholar.google.com" aria-label="Google Scholar"
+            <a href="https://scholar.google.com/citations?user=ZvHGQPkAAAAJ&hl=en" aria-label="Google Scholar"
               ><i class="fas fa-graduation-cap"></i
             ></a>
             <a href="mailto:you@example.com" aria-label="Email"
               ><i class="fas fa-envelope"></i
             ></a>
-            <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"
+            <a href="https://www.linkedin.com/in/kzubaer/" aria-label="LinkedIn"
               ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://twitter.com/yourprofile" aria-label="Twitter"
-              ><i class="fab fa-twitter"></i
             ></a>
           </div>
         </div>
@@ -182,6 +179,9 @@
           move: { enable: true, speed: 1 },
         },
       });
+      function openCV() {
+    window.open('cv.pdf', '_blank'); // Replace with your actual CV path
+}
     </script>
     <style>
       #particles-js {
