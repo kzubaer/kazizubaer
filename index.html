@@ -12,6 +12,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 
   <meta name="color-scheme" content="light">
 </head>
@@ -36,23 +37,23 @@
 
   <main>
     <section class="hero container" id="home">
-      <div class="hero-inner" data-aos="fade-up" data-aos-duration="900">
+      <div class="hero-inner" data-aos="fade-up" data-aos-duration="1500">
         <h1 class="hero-title">Designing molecules that assemble with purpose</h1>
         <p class="hero-sub">Organic chemist — supramolecular polymers, molecular design, spectroscopy. I blend precision synthesis with elegant characterization to tune structure and function.</p>
 
         <div class="hero-cta">
           <a class="btn btn-primary" href="research.html">Selected Projects</a>
-          <a class="btn btn-ghost" href="about.html">About Me</a>
-          <a class="btn btn-primary" href="">Download CV</a>
+          <a class="btn btn-ghost" id="btn-aboutme" href="about.html">About Me</a>
+          <a class="btn btn-primary btn-cv" id="CV" onclick="openCV()" href="#">Download CV</a>
         </div>
 
         <div class="hero-meta" aria-hidden="true">
           <div class="meta-card" data-aos="fade-right" data-aos-delay="200">
-            <strong>30+</strong>
+            <strong>2+</strong>
             <span>Publications & Posters</span>
           </div>
           <div class="meta-card" data-aos="fade-left" data-aos-delay="300">
-            <strong>10+</strong>
+            <strong>3+</strong>
             <span>Years Research Experience</span>
           </div>
         </div>
@@ -117,7 +118,7 @@
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="main.js"></script>
+  
   <script>
     AOS.init({
       once: true,
@@ -138,9 +139,14 @@
       opacity: 0.4,
       width: 1
     },
-    move: { enable: true, speed: 1 }
+    move: { enable: true, speed: 1.3 }
   }
 }); 
+
+function openCV() {
+    // Replace with the actual file path or URL to your CV
+    window.open('cv.pdf', '_blank');
+}
   </script>
   <style>
 #particles-js {
